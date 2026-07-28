@@ -1,124 +1,122 @@
-/* General Base Styles */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #f3f3f3;
-  margin: 0;
-  padding: 0;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_foodlogo.png");
   text-align: center;
-  color: #333;
-}
-
-/* ==========================================
-   TASK 1 & 2: Navigation Styling
-   ========================================== */
-nav {
-  background-color: #ffffff;
-  padding: 20px 0;
-}
-
-/* Task 1: Logo dimensions & horizontal centering */
-nav img {
-  width: 180px; /* cite: 1 */
-  display: block;
-  margin: 0 auto; /* cite: 1 */
-}
-
-/* Task 2: Vertical margins for span elements in nav */
-nav span {
-  display: inline-block;
-  margin: 10px 0; /* cite: 1 */
-  padding: 0 10px;
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #666;
-}
-
-/* ==========================================
-   TASK 3 & 4: Content Container
-   ========================================== */
-/* Task 3 & 4: Height, margins, and scrollable overflow */
-.content {
-  height: 500px; /* cite: 1 */
-  margin: 10px auto; /* cite: 1 */
-  overflow: scroll; /* cite: 1 */
-  width: 90%;
-  max-width: 960px;
-  background-color: #ffffff;
-}
-
-/* Task 3: Center .body inside .content without vertical margins */
-.content .body {
-  margin: 0 auto; /* cite: 1 */
-  padding: 20px;
-  max-width: 700px;
-}
-
-/* ==========================================
-   TASK 5: Header Section
-   ========================================== */
-/* Task 5: Header height and background image */
-.header {
-  height: 320px; /* cite: 1 */
-  background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-burger.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Task 5: Header H1 padding and margin */
-.header h1 {
-  background-color: rgba(18, 160, 163, 0.85);
-  color: #ffffff;
-  padding: 20px; /* cite: 1 */
-  margin: 0 auto; /* cite: 1 */
-  font-size: 28px;
-  letter-spacing: 2px;
-  width: 80%;
-}
-
-/* ==========================================
-   TASK 6: Order Button
-   ========================================== */
-/* Task 6: Button box dimensions, padding, margins, and border */
-.button {
-  width: 200px; /* cite: 1 */
-  padding: 20px; /* cite: 1 */
-  margin: 40px auto; /* cite: 1 */
-  border: 1px solid blue; /* cite: 1 */
-  color: #12a0a3;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-/* ==========================================
-   TASK 7: Nutrition Facts Section
-   ========================================== */
-/* Task 7: Nutrition UL padding */
-ul.nutrition {
-  list-style: none;
-  padding: 20px; /* cite: 1 */
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5px;
-}
-
-/* Task 7: Nutrition LI width, padding, and bottom margin */
-ul.nutrition li {
-  width: 200px; /* cite: 1 */
-  padding: 10px 20px; /* cite: 1 */
-  margin-bottom: 3px; /* cite: 1 */
-  background-color: #12a0a3;
-  color: #ffffff;
-  font-size: 12px;
-  box-sizing: border-box;
-}
-
-ul.nutrition li strong {
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  text-align: center;
+}
+
+nav img {
+  display: block;
+  margin: 0 auto;
+  width: 180px; 
+}
+
+nav span {
+  display: block;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 10px 0; 
+}
+
+nav a {
+  color: #666666;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #05A8AA;
+  padding: 5px;
+}
+
+.content {
+  height: 500px;      
+  margin: 10px auto;  
+  width: 100%;
+  overflow: auto;  
+}
+
+.content .body {
+  margin: 0 auto;    
+  width: 90%;
+}
+
+.body p {
+  color: #333333;
+  font-weight: 100;
+  line-height: 34px;
+  width: 90%;
+  margin: 18px auto 0 auto; 
+}
+
+.header {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burgerphoto.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 320px;       
+}
+
+.header h1 {
+  background-color: #05A8AA;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 40px;
+  margin: 0 auto;     
+  padding: 20px;      
+  width: 68%;
+}
+
+.button {
+  border: 1px solid #05A8AA; 
+  border-radius: 4px;
+  color: #05A8AA;
+  display: block;
+  font-weight: 700;
+  margin: 40px auto;   
+  padding: 20px;       
+  width: 200px;        
+}
+
+.button:hover {
+  background-color: #05A8AA;
+  border: 1px solid #05A8AA;
+  color: #FFF;
+}
+
+ul.nutrition {
+  padding: 20px;       
+  margin: 0 auto;
+  list-style: none;
+}
+
+ul.nutrition li {
+  display: inline-block;
+  background-color: #05A8AA;
+  padding: 10px 20px; 
+  width: 200px;        
+  margin-bottom: 3px;  
+}
+
+.nutrition .category {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.nutrition .value {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
