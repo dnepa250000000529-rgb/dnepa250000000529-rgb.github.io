@@ -1,1 +1,0 @@
-# dnepa250000000529-rgb.github.io
