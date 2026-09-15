@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown to HTML Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Markdown Converter</h1>
+      <p>Type your Markdown on the left, see rendered HTML on the right.</p>
+    </header>
 
+    <main class="editor-grid">
+      <section class="pane">
+        <label for="editor">Markdown Input</label>
+        <textarea id="editor" placeholder="Enter your markdown here..."></textarea>
+      </section>
+
+      <section class="pane">
+        <label>HTML Preview</label>
+        <div id="preview"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
